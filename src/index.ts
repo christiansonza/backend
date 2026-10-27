@@ -1,8 +1,6 @@
 import "dotenv/config";
 import cors from "cors";
 import express, { type NextFunction, type Request, type Response } from "express";
-import dns from "node:dns";
-dns.setServers(["8.8.8.8", "1.1.1.1"])
 import { connectDB, isDBConnected } from "./config/db";
 import gamesRouter from "./routes/games";
 
